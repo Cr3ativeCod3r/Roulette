@@ -2,7 +2,7 @@
 
 
 ![Zrzut ekranu 2023-10-21 110954](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/6436ad1a-bfc4-40fb-a8cd-aae4510f8f15)
-You can find this page 
+
 ### Technology stack
 
 - MySQL
