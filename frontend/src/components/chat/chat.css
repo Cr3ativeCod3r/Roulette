@@ -1,0 +1,217 @@
+
+  #message-container {
+    background-color: #222225;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    opacity: 80%;
+   height: 500px;
+   margin-left: 1%;
+   margin-top: 1px;
+   scroll-behavior: smooth;
+   border: #222225 10px solid;
+
+  }
+  
+  #forms {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px; 
+    margin-left: 1%;
+    width: 25%;
+    background-color: #222225;
+  }
+  
+  
+  #message-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  #message-container::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 4px;
+  }
+  
+  #message-container::-webkit-scrollbar-track {
+    background-color: #333;
+  }
+  
+  
+  
+  label {
+    font-size: 16px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    width: calc(100% - 80px); /* Adjusted width to accommodate the button */
+    
+  }
+  
+  
+  
+
+  #room-button {
+    background-color: #e74c3c;
+   
+  }
+  
+  #room-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .right-label {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  
+  
+  
+  #message-input
+  {
+    width: 80%;
+    height: 50px;
+  
+  }
+  
+  #send-button {
+  
+
+  
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #564e4e;
+    height: 30px;
+    display: flex;
+    margin-top: 10px;
+    float: right;
+    margin-right: 5%;
+    
+    
+  }
+  #send-button:hover
+  {
+    background-color: #669e68;
+  }
+  
+  #send-button img {
+    width: 35px; /* Ustawić szerokość obrazka na automatyczną */
+    height: 100%; /* Zajmie całą dostępną wysokość przycisku */
+   
+  
+  }
+  
+  #room-input
+  {
+    background-color: #89939d;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .my
+  {
+    width: 98%;
+  background-color: #242427;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    float: left;
+  color: #bbb7b7;
+  height: auto;
+  
+    
+  }
+  
+ 
+  .infoerror{color: #c0392b;}
+
+  
+  .handle
+  {
+    width: 100%;
+    height: 50px;
+  
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    #message-container
+    {
+      width: 300px;
+      background-color: #815f5f;
+    }
+    .my,.his
+    {
+      max-width: 250px;
+    }
+  }
+  
+
+
+  .chatphoto
+  {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  .nick
+  {
+    color: rgb(203, 212, 16);
+    margin-left: 10px;
+    font-family:monospace
+  }
+
+  .timestamp
+  {
+    margin-left: 10px;
+  }
+
+  #online-users
+  {
+    color: white;
+   background-color: #222225;
+   width: 25%;
+  margin-left: 1%;
+   border-radius: 10px;
+text-align: center;
+padding-bottom: 5px;
+margin-top: 20px;
+  }
+
+
+    
+  #info
+  {
+  
+    color: #669e68;
+  
+
+ 
+  }
+
+  .info
+  {
+   text-align: center;
+    color: #a80000;
+
+
+  }
+
+  div.message-text
+  {
+    color:white;
+    margin-left: 40px;
+  }

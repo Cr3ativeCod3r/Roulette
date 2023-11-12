@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authenticated</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'nonce-<%= nonce %>'"
+    />
+  </head>
+
+  <body>
+    <div
+      id="dataContainer"
+      data-jwtToken="<%= jwtToken %>"
+      data-clientUrl="<%= clientUrl %>"
+    ></div>
+
+    <script nonce="<%= nonce %>" src="/script.js"></script>
+  </body>
+</html>

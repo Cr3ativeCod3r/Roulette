@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^5.0.0",
+    "cookie": "^0.5.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.17.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "googleapis": "^95.0.0",
+    "js-": "^1.0.0",
+    "js-cookie": "^3.0.5",
+    "js-cookies": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^5.1.0",
+    "mongoose": "^6.12.0",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "passport": "^0.6.0",
+    "passport-steam": "^1.0.18",
+    "socket.io": "^4.7.2",
+    "stream-http": "^3.2.0"
+  }
+}

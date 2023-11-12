@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Changa-Regular;
+  src: url('../fonts/Changa-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.nav {
+  font-family: 'Changa-Regular', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 3.75rem;
+  background-color: inherit;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(9, 76, 60);
+}
+
+.link-logo {
+  width: 225px;
+}
+
+.logo {
+  width: 250px;
+  padding-left: 25px;
+}
+
+.nav-games {
+  margin: 0;
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlink {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #8e8e99;
+  fill: #8e8e99;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #f4e59f;
+  fill: #f4e59f;
+}
+
+.name {
+  font-size: 16px;
+  padding-left: 0.5rem;
+}
+
+.rightsidenav {
+  width: 21rem;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth {
+  width: 9rem;
+  height: 50px;
+  border-radius: 5px;
+  border-color: #8e8e99;
+} 
+
+.register {
+  border: 1px solid transparent;
+  color: white;
+  background-color: #3d7850;
+}
+
+.register:hover {
+  background-color: #26352b;
+}
+
+.login {
+  border: 1px solid white;
+  color: white;
+  background-color: #134523;
+}
+
+.login:hover {
+  background-color: #26352b;
+}
+
+.steamicon {
+  background-color: #8e8e99;
+}

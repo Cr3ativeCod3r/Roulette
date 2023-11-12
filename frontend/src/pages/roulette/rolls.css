@@ -1,0 +1,70 @@
+.red,.green,.black
+{
+    margin-right: 5px;
+    height: 10px;
+}
+.red{color: red;}
+.green{color: green;}
+.black{color: black;}
+
+
+#timer {
+    text-align: center;
+    margin: 20px;
+    width: 95%;
+   
+  }
+  
+  .progress-bar {
+    
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; 
+ 
+  }
+  
+  .time-left {
+    position: absolute; 
+    top: 0;
+    padding: 0 5px; 
+    border-top-left-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 42%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .progress {
+    height: 100%;
+    width: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s linear;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+  }
+  
+  @media only screen and (max-width: 1200px) {
+  
+   
+    .time-left
+    {
+      margin-left: 120px;
+    }
+    #timer
+    {
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+
+  
+  }
+
+
+
+ 
+ 

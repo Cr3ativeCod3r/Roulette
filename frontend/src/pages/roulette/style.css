@@ -1,0 +1,462 @@
+
+
+#rul {
+  min-width: 90%;
+    color: white;
+    float: right;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: auto;
+    background-color:  #222225;
+    opacity: 80%;
+
+
+  
+   
+  }
+  #top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+
+  #top input[type="number"] {
+    padding: 8px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #players {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  
+  #players h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+/*   
+  #players div {
+  
+ 
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    height: auto;
+  
+    width: 95%;
+  margin-left: auto;
+  margin-right:auto;
+ 
+
+ 
+  } */
+  
+
+
+  
+  /* Style dla poszczególnych kolorów graczy */
+  
+  #red-players {
+
+    width: 20vw;
+    color: #000;
+    height: auto;
+    background-color: #252121;
+    border-radius: 10px;
+    margin-top: 10px;
+  
+    
+  }
+  
+  #black-players {
+  
+   
+    color: #000;
+    width: 20vw;
+    height: auto;
+    background-color: #252121;
+    border-radius: 10px;
+    margin-top: 10px;
+
+  }
+  
+  #green-players {
+ 
+    width: 20vw;
+    color: #000;
+    height: auto;
+    background-color: #252121;
+    border-radius: 10px;
+    margin-top: 10px;
+
+  }
+
+  
+  .player-img
+  {
+    float: left;
+   border-radius: 100%;
+  width: 35px;
+  height: 35px;
+   margin-left: 10px;
+   margin-top: 4px;
+  }
+
+  .player-name
+  {
+    float: left;
+    margin-left: 20px;
+    font-size: 15px;
+
+  font-weight: 700;
+  color: rgb(222, 222, 222);
+  display: flex;
+  margin-top: 8px;
+
+  
+
+  }
+  .player-stake
+  {
+    float: right;
+    color: rgb(255, 255, 255);
+  font-weight: 700;
+ font-size: 18px;
+ margin-bottom: 2px;
+ margin-right: 10px;
+ margin-top: 5px;
+  }
+
+
+
+  .color
+  {
+   
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+   
+    
+  }
+  #red{  background-color: #ff4444;  min-width: 100%; border: 0;}
+  #black{ background-color: #000000;  min-width: 100%; border: 0;}
+  #green{background-color: #069337;  min-width: 100%; border: 0;}
+  .coutplayers
+  {
+   
+    color: #c2bdbd;
+    background-color: #4a4141;
+    font-weight: bold;
+    border-radius: 10px;
+    min-width: 320px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    opacity: 90%;
+    height: 35px;
+  margin-top: 10px;
+
+  }.betp{ margin-top: 5px; display: flex; align-items: center; justify-content: center;}
+  #menu
+  {
+    background-color: rgb(112, 86, 86);
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 2.5%;
+    border: 1px rgb(162, 127, 127) solid;
+
+  }
+  .coins, #clear, #max,#clearf
+  {
+    background-color: #a27676;
+    height: 40px;
+    margin-left: 10px;
+    width: 70px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px rgb(124, 74, 74) solid;
+   
+  }
+  .coins:hover
+  {
+    background-color: #000000;
+  }
+  #timer
+  {
+    margin-top: 20px;
+    width: 180px;
+    background-color: #1c0d0d;
+
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+
+
+  }
+
+  #rolls
+  {
+   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  
+    
+  }
+
+  #bot
+  {
+   
+    
+  
+    margin-top: 30px;
+  
+    border-radius: 10px;
+    padding-bottom: 20px;
+ 
+    opacity: 80%;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+ 
+   
+  }
+
+  .better
+  {
+   width: 20vw;
+   height: 40px;
+   margin-top: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+ 
+
+  }
+
+
+  #balance
+  {
+    width: auto;
+    height: 50px;
+    background-color:  #222225;
+    border-radius: 10px;
+    margin-top: 29px;
+    border: 1px rgb(162, 127, 127) solid;
+    margin-left: 10px;
+    padding-right: 10px;
+    
+  }#ba{margin-left: 10px; margin-top: 12px;}#bc{color: #ebd300;}
+
+input
+  {
+    background-color: rgb(176, 161, 161);
+    
+  }
+  body
+  {
+    background-color: #181717;
+  }
+  #size
+  {
+    color: #4a4141;
+    margin-right: 100px;
+  }
+
+  #res1
+{
+
+
+  width: 72%;
+  height: auto;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-right: 15px;
+  /* background-color: #ccc; */
+
+}
+
+#amou1,#clearf{display: none;}
+
+
+
+
+
+.botb
+{
+  min-width: 120px;
+}.betp,.coutplayers{ min-width: 100px;}
+
+
+
+@media only screen and (max-width: 1200px) {
+  
+  #res1
+  {
+  
+  
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+  }
+  
+
+#rul {
+  width: 400px;
+  overflow: hidden;
+   
+  }
+
+ .color{
+
+    width: 10px ;
+  }
+  #players
+  {
+    min-width: 370px;
+ 
+
+  }#black{margin-right: 10px;}
+  #bot
+  {
+    width: auto;
+ 
+  }
+  
+ .coutplayers
+  {
+  
+    min-width: 120px;
+    
+   
+  }
+  .betp
+  {
+    width: 100px;
+    margin-right: 20px;
+    text-align: center;
+   
+
+  }
+ 
+  .botb
+  {
+    min-width: 120px;
+    margin-right: 10px;
+    padding: 0;
+  }
+
+  .coins
+  {
+    width: 60px;
+  }
+  #balance
+  {
+  
+    display: none;
+  } 
+  #menu
+  {
+    width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+    height: 50px;
+  
+  
+    
+  }
+  #top
+  {
+    height: 80px;
+    width: 100%;
+    display: flex;
+  }
+
+ .logo,.free,#profile,#past-rolls,#message-container, #online-users,#forms,#amout,#clear
+ {
+  display: none;
+ }
+ #amou1
+ {
+  display: block;
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+ }#am1{width: 70%;}
+ #rolls
+ {
+  width: 100%;
+  height: 20px;
+ }
+#clearf
+{
+  display: block;
+  float: right;
+  margin-right: 30px;
+  margin-top: 3px;
+}
+
+.better
+{
+  width: 120px;
+  font-size: xx-small;
+}
+.player-img,.player-name,.player-stake
+{
+  font-size: small;
+
+}.player-name,.player-stake
+{
+  margin-top: 14px;
+  margin-left: 0;
+}
+.player-name
+{
+  display: none;
+}
+}
+
+/* @media only screen and (max-width: 1000px)and (min-width: 601px) {
+  #message-container, #online-users,#forms
+  {
+    display: none;
+  }
+  #res1
+  {
+    width: 90%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  
+.botb
+{
+  min-width: 180px;
+}.betp,.coutplayers{ min-width: 180px;}
+} */

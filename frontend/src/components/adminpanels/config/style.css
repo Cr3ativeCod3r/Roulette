@@ -1,0 +1,63 @@
+#page {
+  width: 1050px;
+  color: white;
+  float: right;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 10px;
+  height: 628px;
+  background-color: #222225;
+}
+#config {
+  margin-top: 100px;
+}
+p {
+  color: rgb(77, 156, 136);
+}
+#save {
+  width: 200px;
+  background-color: #327c30;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+#save:hover {
+  background-color: #184b0d;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form div {
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#main {
+  margin-left: 90px;
+  margin-bottom: 40px;
+}

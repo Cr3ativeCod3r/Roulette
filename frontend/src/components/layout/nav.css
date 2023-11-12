@@ -1,0 +1,247 @@
+*{font-family: 'Nunito', sans-serif;}
+#logout,#logoutf
+{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #222225;
+    margin-left: 5px;
+    
+}#logout:hover{background-color: #4c4c54;}
+#logoutf{float: none; clear: both;}
+
+#photo
+{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#profile,#profilef
+{
+    width: auto;
+    padding-left: 15px;
+    padding-right:15px ;
+    background-color:#222225; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: small;
+    border: 1px solid rgb(81, 74, 74);
+    height: 55px;
+} #profile:hover{background-color: #4c4c54;}
+#profilef{font-size: xx-small;}
+
+.nav
+{
+    background-color: #2e2e33;
+
+  
+}
+#reg
+{
+    margin-right: 10px;
+    background-color: #222225;
+}
+#coins
+{
+    width: 50px;
+    height: 50px;
+    background-color: #222225;
+    border-radius: 10px;
+    border: 1px solid rgb(81, 74, 74);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(239, 98, 98);
+    margin-right: 5px;
+
+ font-size: 13px;
+
+
+    
+}
+
+#deposit
+{
+ width: 100px;
+ height: 40px;
+ background-color: #222225;
+ color: white;
+ border-radius: 5px;
+ margin-right: 10px;
+
+ cursor: pointer;
+}#deposit:hover{background-color: #4c4c54;}
+#withdraw
+{
+    width: 100px;
+    height: 40px;
+    background-color: #222225;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#withdraw:hover{background-color: #4c4c54;}
+.rightsidenav
+{
+    width: auto;
+
+}
+.logo
+{
+    width: 300px;
+    
+}
+
+#ref
+{
+    border-radius: 10px;
+    background-color: #6f6f79;
+    margin-right: 2px;
+}
+.App
+{
+    margin-left: auto;
+}
+#steam
+{
+    cursor: pointer;
+}
+.free,freef
+{
+
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+#admin
+{
+    color:white;
+ 
+}
+.logop,#menup,#coinsp, .menub,#lgf,.menubc
+{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .game,#logout,#ref
+    {
+        display: none;
+    }
+    #coins
+    {
+       
+    
+        color: rgb(221, 221, 25);
+       font-weight: bold;
+        margin-bottom: 15px;
+        
+    
+    }
+    .logop
+    {
+        display: block;
+       width: 55px;
+       height: 50px;
+       margin-top: 5px;
+    }
+    #menup
+    {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-bottom: 15px;
+        cursor: pointer;
+      
+        
+    }
+    .menub
+    {
+        display:block;
+        z-index: 2;
+        background-color: rgb(44, 49, 53);
+        width: 260px;
+        height: 500px;
+        position: absolute;
+        margin-top: 550px;
+
+      
+       
+    }
+  #coinsp
+  {
+    
+    height: 30px;
+    width: 30px;
+   z-index: 10;
+   margin-bottom: 12px;
+  display: flex;
+  margin-right: 100px;
+
+    
+  }
+
+  @keyframes menub{
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes menubc{
+    from {
+      transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+  }
+
+  
+  .menub {
+    animation: menub 0.3s ease-in-out;
+  }
+  .menubc{  
+    display: none;
+    transition-duration:1s;
+
+}
+
+
+.App
+{
+  
+  margin-bottom: 15px;
+ 
+}
+#steam
+{
+    width: 150px;
+    height: 30px;
+}
+
+.nav1
+{
+    margin-top: 5px;
+    border: 1px rgb(126, 114, 114) solid;
+    border-radius: 10px;
+}
+#lgf
+{
+    margin-left: 10px;
+}
+
+}

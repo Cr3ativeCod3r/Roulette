@@ -1,0 +1,118 @@
+
+
+#roulette {
+  overflow-x: hidden;
+    overflow-y: hidden;
+    height: 140px;
+    white-space: nowrap;
+    width: 100%;
+   
+  }
+  
+  #roulette .wheel {
+    margin-top: 40px;
+   /* overflow-x: hidden; */
+  }
+  #case {
+   width: 1050px;
+    height: 69px;
+    background-image: url("cases.png");
+    position: relative;
+    margin: 0px auto;
+    margin-top: -2%;
+    border-radius: 10px;
+  }
+  #pointer {
+    width: 4px;
+    background: #ffffff;
+   /* ff0 yellow */
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    height: 100%;
+  }  
+
+ .ball-0,.ball-1,.ball-8 {
+    color: rgb(255, 255, 255);
+    cursor: default;
+    border-radius: 45px;
+    border: 1px solid transparent;
+    width: 45px;
+    height: 45px;
+    background-color: #000;
+    font-size: 17px;
+    line-height: 45px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    margin: 1px;
+    margin-right: 3px;
+}
+
+.ball-0 {
+    background-color: #6fb26b;
+    border: 0px !important;
+}
+
+.ball-1 {
+    background-color: #b04a43;
+    border: 0px !important;
+}
+
+.ball-8 {
+    background: #454545;
+    border: 0px !important;
+}
+
+.win
+{
+  color: #53f74b;
+}
+.lose
+{
+  color: red;
+}
+.idk
+{
+  color: rgb(255, 255, 255);
+}
+#rr
+{
+  text-align: center;
+  margin-left: 20px;
+
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  
+  #case{
+    width: 1050px; /* Zmieniłem szerokość na 100%, aby wypełnić całą dostępną szerokość na małych ekranach */
+   
+  }
+  #roulette
+  {
+    width: 100%;
+   margin: 0 ;
+   display: block;
+   overflow-x: hidden;
+   margin-right: 100px;
+  
+  }
+
+  .ball-1,.ball-0,.ball-8{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #rr
+{
+  margin-right: 50px;
+}
+  
+
+}
+

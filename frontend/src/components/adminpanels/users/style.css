@@ -1,0 +1,69 @@
+#cr1{
+  width: 1050px;
+  color: white;
+  float: right;
+  font-weight: bold;
+  margin-top: 40px;
+  border-radius: 10px;
+  height: 628px;
+  background-color: #222225;
+
+ 
+}
+
+.config
+{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.users1
+{
+  width: 300px;
+  height: 500px;
+  float: left;
+  background-color: rgb(53, 68, 53);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+
+}
+
+
+
+#allus
+{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.player
+{
+  height: auto;
+
+}
+label
+{
+  text-align: center;
+}
+.pht 
+{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  margin-top: 10px;
+}
+.phtu
+{
+  font-size: 10px;
+}
