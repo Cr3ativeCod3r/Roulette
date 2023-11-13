@@ -1,7 +1,8 @@
 
 
 
-![Zrzut ekranu 2023-10-21 110954](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/6436ad1a-bfc4-40fb-a8cd-aae4510f8f15)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/7e4e601a-079d-4379-bee3-33832ebe981d)
+
 
 ### Technology stack
 
