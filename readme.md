@@ -46,7 +46,7 @@ npm start
 ### Photos
 
 
-![Zrzut ekranu 2023-10-21 111135](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/3013ac5a-990b-41ba-b697-6e511c35cabb)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/8d6866bc-4038-4d19-9ff3-64e2d30ca3dc)
 
 ![Zrzut ekranu 2023-10-21 111223](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/2aff655b-bc54-4439-9d69-d03e63af4366)
 
