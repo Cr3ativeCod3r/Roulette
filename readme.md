@@ -52,7 +52,7 @@ npm start
 
 ![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/4b0c3cbc-4ae9-4c75-b323-226b318fc879)
 
-![Zrzut ekranu 2023-10-23 001338](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/e73e989d-1880-47ca-8d0a-7659c040cdcf)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/881bef0e-775d-4556-83c8-a11285fcb01c)
 
 ![image](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/03a04888-3fb5-40cc-a3ea-5499a1a2cbc3)
 
