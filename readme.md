@@ -54,8 +54,7 @@ npm start
 
 ![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/881bef0e-775d-4556-83c8-a11285fcb01c)
 
-![image](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/03a04888-3fb5-40cc-a3ea-5499a1a2cbc3)
-
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/04e01412-4d7e-4b95-a64e-427c832704a8)
 
 
 ### Features to add
