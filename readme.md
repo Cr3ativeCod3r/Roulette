@@ -1,7 +1,8 @@
 
 
 
-![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/7e4e601a-079d-4379-bee3-33832ebe981d)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/a6e211c1-1939-4c05-a95d-82bba638a4ca)
+
 
 
 ### Technology stack
