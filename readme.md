@@ -13,7 +13,7 @@
 - Node.js
 - Socket.io
 
-  The website is deployed on a AWS instance (ubuntu) on a proxy server (Nginx) at https://kamil-banaszek.pl 
+  The website is deployed on a AWS instance (ubuntu) on a proxy server (Nginx) at https://kamil-banaszek.pl (demo verison but functional)
 
 
 ### Features
