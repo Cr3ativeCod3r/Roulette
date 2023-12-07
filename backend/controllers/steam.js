@@ -28,7 +28,7 @@ module.exports = app => {
   
           let user = results[0];
   
-          if (!user && user.name!="Admin") 
+          if (!user) 
           {
             const newUser = {
               steamId: profile._json.steamid,

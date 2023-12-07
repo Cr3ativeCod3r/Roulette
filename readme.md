@@ -1,8 +1,10 @@
 
 
 
-![Zrzut ekranu 2023-10-21 110954](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/6436ad1a-bfc4-40fb-a8cd-aae4510f8f15)
-You can find this page 
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/a6e211c1-1939-4c05-a95d-82bba638a4ca)
+
+
+
 ### Technology stack
 
 - MySQL
@@ -11,7 +13,7 @@ You can find this page
 - Node.js
 - Socket.io
 
-  The website is deployed on a VPS (ubuntu) on a proxy server (Nginx) at https://kamil-banaszek.pl 
+  The website is deployed on a AWS instance (ubuntu) on a proxy server (Nginx) at https://kamil-banaszek.pl 
 
 
 ### Features
@@ -45,16 +47,15 @@ npm start
 ### Photos
 
 
-![Zrzut ekranu 2023-10-21 111135](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/3013ac5a-990b-41ba-b697-6e511c35cabb)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/8d6866bc-4038-4d19-9ff3-64e2d30ca3dc)
 
-![Zrzut ekranu 2023-10-21 111223](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/2aff655b-bc54-4439-9d69-d03e63af4366)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/e4bb23cf-1b94-4c2c-bb9f-54421340ad01)
 
-![Zrzut ekranu 2023-10-21 111315](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/3493d59a-b3f2-4e7c-a043-395949d590cf)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/4b0c3cbc-4ae9-4c75-b323-226b318fc879)
 
-![Zrzut ekranu 2023-10-23 001338](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/e73e989d-1880-47ca-8d0a-7659c040cdcf)
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/881bef0e-775d-4556-83c8-a11285fcb01c)
 
-![image](https://github.com/Cr3ativeCod3r/rousql/assets/117399144/03a04888-3fb5-40cc-a3ea-5499a1a2cbc3)
-
+![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/04e01412-4d7e-4b95-a64e-427c832704a8)
 
 
 ### Features to add
