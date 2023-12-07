@@ -87,6 +87,7 @@ const initSocketIO = (server) => {
   //START IO COINNECION-------------------------------------------------------------------------------
 
   io.on("connection", (socket) => {
+    io.emit('rollsData', { data: "Hello from the server!" });
     socket.on("settings", (data) => {
       if (data.minBet) {
         min = data.minBet;
@@ -406,6 +407,32 @@ const initSocketIO = (server) => {
       }
     });
 
+    //HANDLE LAST 100
+    socket.on("getlast100", (id) => {
+      console.log("need me")
+      sql = "SELECT " +
+      "SUM(CASE WHEN colour = 'red' THEN 1 ELSE 0 END) AS red_count, " +
+      "SUM(CASE WHEN colour = 'green' THEN 1 ELSE 0 END) AS green_count, " +
+      "SUM(CASE WHEN colour = 'black' THEN 1 ELSE 0 END) AS black_count " +
+      "FROM (SELECT * FROM rolls ORDER BY id DESC LIMIT 100) AS subquery;";
+
+
+  
+      db.query(sql, (err, results) => {
+          try {
+              let red = results[0].red_count;
+              let black = results[0].black_count;
+              let green = results[0].green_count; 
+              console.log(red,black,green)
+  
+              socket.emit("last100", { red, black, green });
+          } catch (err) {
+              console.log("error loading history:", err);
+          }
+      });
+  });
+  
+
     //HANDLE POSITION
 
     //PAGE VISITOR SET DATA ---------------------------------------------------------
@@ -704,8 +731,6 @@ const initSocketIO = (server) => {
               "Błąd podczas wstawiania danych do bazy danych:",
               err
             );
-          } else {
-            console.log("Dane wstawione do bazy danych");
           }
         }
       );
@@ -716,7 +741,20 @@ const initSocketIO = (server) => {
       rolls.push(num);
       io.emit("rolls", { rolls });
       io.emit("shownew", shownewnumber);
+
+      //UPDTAE rolls
+    const addroll = `INSERT INTO rolls (id, roll, colour) VALUES (?, ?, ?)`;
+    const values = [gameid, num, winningColor];
+    
+    db.query(addroll, values, (err, result) => {
+      if (err) {
+        console.error("Błąd przy dodawaniu danych do tabeli rolls:", err);
+      } 
+    });
     }, timer);
+
+    
+    
   }
 
   //TIMER HANDLE----------------------------------------------------------------------------

@@ -86,8 +86,17 @@ const Roulette = () => {
     }
   }, [socket, loggedInUser]);
 
+  const [rollsData, setRollsData] = useState([]);
+  
+  const [redh, setRedh] = useState(0);
+  const [blackh, setBlackh] = useState(0);
+  const [greenh, setGreenh] = useState(0);
+  
   useEffect(() => {
+
+
     if (socket) {
+      // fetchData();
       socket.emit("update", id);
       socket.on("updatecolors", (updatedColorValues) => {
         setColorValues(updatedColorValues);
@@ -97,6 +106,20 @@ const Roulette = () => {
         setIsDone(shownewnumber);
         wincolor(colors);
       });
+      socket.emit("getlast100", id)
+      socket.on("last100", ({red,black,green}) => {
+        setRedh(red);
+        setBlackh(black);
+        setGreenh(green);
+      });
+
+   
+        socket.emit('getRolls');
+        socket.on('rollsData', (data) => {
+          setRollsData(data.data);
+        });
+    
+      
 
       socket.on("rolls", (data) => {
         setRolls(data.rolls);
@@ -108,6 +131,8 @@ const Roulette = () => {
           resetplayers();
           showlast10();
           setbet(0);
+          // fetchData();
+          socket.emit("getlast100", id)
         }, timer + 1000);
       });
 
@@ -272,24 +297,6 @@ scrollContainer.scrollLeft = (scrollContainer.scrollWidth - scrollContainer.clie
     }
   }
 
-  // useEffect(() => {
-  //   if (isDone) {
-  //   try
-  //   {
-  //     playSound()
-  //   }catch(err)
-  //   {
-  //     console.log("KURWA MAC: ", err)
-  //   }
-
-  //   }
-  // }, [isDone]);
-
-  // function playSound() {
-  //   const audio = new Audio(doneSound)
-  //   audio.play()
-  // }
-
 
   return (
     <div id="res1">
@@ -300,11 +307,11 @@ scrollContainer.scrollLeft = (scrollContainer.scrollWidth - scrollContainer.clie
           <div className="progress-bar">
             <div className="time-left">
               {timeLeft > 0.01 ? (
-                `Rolling in ${timeLeft.toFixed(0)}...`
+               <span class="roller">Rolling in {timeLeft.toFixed(0)}...</span>
               ) : isDone ? (
-                `Roled ${checklast}!`
+                <span class="roller">Rolled {checklast}!</span>
               ) : (
-                <span id="rr">***Rolling***</span>
+                <span class="roller">***Rolling***</span>
               )}
             </div>
             <div
@@ -324,7 +331,7 @@ scrollContainer.scrollLeft = (scrollContainer.scrollWidth - scrollContainer.clie
         </div>
 
         <div id="rolls">
-         <span id="past-rolls">Past Rolls :</span> 
+         {/* <span id="past-rolls">Past Rolls :</span>  */}
           {last10Rolls.map((roll, index) => {
             const rollNumber = parseInt(roll);
             let rollClass = "";
@@ -343,7 +350,18 @@ scrollContainer.scrollLeft = (scrollContainer.scrollWidth - scrollContainer.clie
               </p>
             );
           })}
+    <div id="past">
+    last 100:
+   <span className="pastr" style={{color:'red' }}>{redh}</span>
+   <span  className="pastr"style={{color:'green' }}>{greenh}</span>
+<span  className="pastr" style={{color:'grey' }}>{blackh}</span>
+  
+    </div>
         </div>
+    
+        <div>
+   
+    </div>
         <div id="amou1">
 
 
@@ -365,7 +383,13 @@ id ="am1"
     
         
           {loggedInUser ? (
+         
             <>
+            </>
+          ) : (
+            <></>
+          )}
+             <>
               <div id="balance">
                 <p id="ba">
                   Balance :
@@ -378,9 +402,6 @@ id ="am1"
               </div>{" "}
           
             </>
-          ) : (
-            <></>
-          )}
 
           <div id="menu">
             

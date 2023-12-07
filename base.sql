@@ -23,12 +23,11 @@ CREATE TABLE IF NOT EXISTS bethistory (
   FOREIGN KEY (userid) REFERENCES users(steamId)
 );
 
--- CREATE TABLE IF NOT EXISTS rolls (
---   id int(11) NOT NULL,
---   roll int(11) NOT NULL,
---   colour VARCHAR(10) NOT NULL,
---   time bigint(20) NOT NULL
--- );
+CREATE TABLE IF NOT EXISTS rolls (
+  id int(11) NOT NULL,
+  roll int(11) NOT NULL,
+  colour VARCHAR(10) NOT NULL,
+);
 
 
 -- FEATURE TO ADD (MLM)
