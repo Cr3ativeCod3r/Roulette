@@ -63,7 +63,8 @@ npm start
 I want to focus on other projects now, so I'm leaving this one, but it can be expanded, e.g. by:
 
 - deposit/withdraw 
-- support 
+- support
+- affiliates 
 - small code changes to make it more efficient (removing redundancy)
 - better css ( i dont have time to make it perfect )
 
