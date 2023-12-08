@@ -57,7 +57,31 @@ npm start
 
 ![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/04e01412-4d7e-4b95-a64e-427c832704a8)
 
+### fairness fun fuct
+U can check every round id result, use e.g. https://www.programiz.com/javascript/online-compiler/ to run below code 
 
+```bash
+const crypto = require('crypto');
+const serverSeed = "PageShouldGenerateNewEverySomeTimeLikePulicSeed";
+const publicSeed = "123";
+const round = "0";
+
+const hashInput = serverSeed + "-" + publicSeed + "-" + round;
+const hash = crypto.createHash('sha256').update(hashInput).digest('hex');
+const roll = parseInt(hash.substr(0, 8), 16) % 15;
+
+let rollColour;
+if (roll === 0) {
+  rollColour = 'bonus';
+} else if (roll >= 1 && roll <= 7) {
+  rollColour = 'orange';
+} else if (roll >= 8 && roll <= 14) {
+  rollColour = 'black';
+}
+
+console.log(roll);
+
+```
 ### Features to add
 
 I want to focus on other projects now, so I'm leaving this one, but it can be expanded, e.g. by:
