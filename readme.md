@@ -86,7 +86,7 @@ console.log(roll);
 ```
 Seeds are made available by public websites every 24 hours (then they are replaced with new ones),
 then by providing the data you can check the result of each draw, all using sha256 hashing, which is used in 
-a similar way by banks and cryptocurrency exchanges
+by banks and cryptocurrency exchanges
 
 ### Page profit fun fuct
 Page earnings looks like:
