@@ -4,12 +4,13 @@ var settingsRaw = fs.readFileSync("./pageconfig.json");
 var settings = JSON.parse(settingsRaw);
 const socketIO = require("socket.io");
 const db = require("../server");
+const crypto = require('crypto');
 
 //Module exports
 const updateCoins = require("./coins");
 const addCoins = require("./plus");
 const minusCoins = require("./minus");
-const { set } = require("mongoose");
+
 
 //MAIN STUFFS
 const players = new Map();
@@ -18,9 +19,9 @@ const betmap = new Map();
 const chatMessages = [];
 const rolls = [];
 const colors = [];
-const layout = [1, 14, 2, 13, 3, 12, 4, 0, 11, 5, 10, 6, 9, 7, 8];
-const numWidth = 1050 / 15;
 
+let serverSeed = settings.serverSeed; 
+let publicSeed = settings.publicSeed;
 let gamers = [];
 let playersByColor = [];
 let historyid = 0;
@@ -40,7 +41,9 @@ let go = 0;
 let tempgo = 0;
 let position = 2;
 let num = 0;
-let color = "";
+let layout = [1, 14, 2, 13, 3, 12, 4, 0, 11, 5, 10, 6, 9, 7, 8];
+let numWidth = 1050 / 15;
+
 
 //TIMER
 let timeLeft = settings.rouletteTimer;
@@ -58,7 +61,6 @@ let canbet = false;
 let shownewnumber = false;
 let timer = 8000;
 
-
 //COLORS HISTORY
 var colorValues = {
   red: 0,
@@ -66,7 +68,7 @@ var colorValues = {
   green: 0,
 };
 
-//WORKING ON DEPOSIT
+// WORKING ON DEPOSIT
 // var TradeOfferManager = require("steam-tradeoffer-manager");
 // var manager = new TradeOfferManager({
 //   domain: "localhost",
@@ -797,12 +799,25 @@ const initSocketIO = (server) => {
 
   function roller() {
     canbet = false;
-
     givetime = true;
-    const winningColor = getRandomColor();
-    if (winningColor == "red") num = Math.floor(Math.random() * 7) + 1;
-    else if (winningColor == "black") num = Math.floor(Math.random() * 7) + 8;
-    else if (winningColor == "green") num = 0;
+ 
+   const hashInput = serverSeed + "-" + publicSeed + "-" + gameid;
+   const hash = crypto.createHash('sha256').update(hashInput).digest('hex');
+   const num = parseInt(hash.substr(0, 8), 16) % 15;
+
+let winningColor;
+if (num === 0) {
+  winningColor = 'green';
+} else if (num >= 1 && num <= 7) {
+  winningColor = 'red';
+} else if (num >= 8 && num <= 14) {
+  winningColor = 'black';
+}
+function sha256(input) 
+{
+  return crypto.createHash('sha256').update(input).digest('hex');
+}
+
     machine(winningColor, num);
     colors.push(winningColor);
 
@@ -817,20 +832,7 @@ const initSocketIO = (server) => {
     }, timer + 1000);
   }
 
-  function getRandomColor() {
-    const colors = ["red", "black", "green"];
-    const probabilities = [7 / 15, 7 / 15, 1 / 14];
-    const rand = Math.random();
-    let cumulativeProbability = 0;
 
-    for (let i = 0; i < colors.length; i++) {
-      cumulativeProbability += probabilities[i];
-      if (rand <= cumulativeProbability) {
-        return colors[i];
-      }
-    }
-    return colors[0];
-  }
 
   function winners(data, winningColor) {
     const { players } = data;
@@ -886,6 +888,27 @@ const initSocketIO = (server) => {
     }
   };
   setInterval(clearOldMessages, 10 * 60 * 1000);
+  setInterval(() => {
+
+    function getRandomLetter() 
+  {
+      const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+      const randomIndex = Math.floor(Math.random() * alphabet.length);
+      return alphabet[randomIndex];
+  }
+  
+  function getRandomWord(length) {
+      let randomWord = '';
+      for (let i = 0; i < length; i++) {
+          randomWord += getRandomLetter();
+      }
+      return randomWord;
+  }
+  const word = getRandomWord(64);
+  publicSeed = crypto.createHash('sha256').update(word).digest('hex');
+  serverSeed = crypto.createHash('sha256').update(word).digest('hex');
+  
+  }, 1000*3600*24); //change seed every 24h
 
   return io;
 };
