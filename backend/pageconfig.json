@@ -2,5 +2,7 @@
     "rouletteTimer": 10,
     "minimumBet": 10,
     "maximumBet": 100000,
-    "chatDelay": 2
+    "chatDelay": 2,
+    "serverSeed ": "startingvaluesserverseedandpublicseed",
+    "publicSeed": 460670512935
 }
