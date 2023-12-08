@@ -57,7 +57,7 @@ npm start
 
 ![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/04e01412-4d7e-4b95-a64e-427c832704a8)
 
-### fairness fun fuct
+### Fairness fun fuct
 U can check every round id result,
 use e.g. https://www.programiz.com/javascript/online-compiler/ 
 to run below code 
