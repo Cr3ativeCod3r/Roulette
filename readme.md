@@ -84,6 +84,19 @@ if (roll === 0) {
 console.log(roll);
 
 ```
+
+### Page profit fun fuct
+Page earnings looks like:
+```bash
+red 7/15 - chances 46,66%  paycheck 2x so page profit is 100% - (46,66%*2) = 6,68 % of all bets
+
+black 7/15 - chances 46,66% paycheck 2x so page profit is 100% - (46,66%*2) = 6,68 % of all bets
+
+green 1/15 - chances 6,66% paycheck 14x  so page profit is 100% - (6,66%*14) = 6,76 % of all bets
+
+You have to subtract rewards or affiliates from your earnings, but it's still a huge profit bringing in tens of thousands of dollars a day
+```
+
 ### Features to add
 
 I want to focus on other projects now, so I'm leaving this one, but it can be expanded, e.g. by:
