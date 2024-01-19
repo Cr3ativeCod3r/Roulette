@@ -1,4 +1,4 @@
-
+I am 100% owner of the code, all rights reserved
 
 
 ![image](https://github.com/Cr3ativeCod3r/Roulette/assets/117399144/a6e211c1-1939-4c05-a95d-82bba638a4ca)
