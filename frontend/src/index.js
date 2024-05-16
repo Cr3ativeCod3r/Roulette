@@ -17,7 +17,7 @@ const store = createStore(rootReducer, composeWithDevTools());
 ReactDOM.render(
   <SocketProvider>
     <Provider store={store}>
-      <Router>
+      <Router basename="/roulette">
         <App />
       </Router>
     </Provider>

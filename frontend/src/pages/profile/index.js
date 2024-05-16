@@ -28,7 +28,7 @@ const Pvp = () => {
   }, [token]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/data")
+    fetch(import.meta.env.VITE_LOCALHOST+"api/data")
       .then((response) => response.json())
       .then((data) => {
         const userData = data.filter((item) => item.userid === id);

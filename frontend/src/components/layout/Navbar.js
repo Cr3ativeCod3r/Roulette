@@ -22,7 +22,7 @@ const Navbar = () => {
   function handleLogin() {
     try {
       const popupWindow = window.open(
-        process.env.domain + "/auth/steam",
+        import.meta.env.VITE_DOMAIN + "/auth/steam",
         "_blank",
         "width=800, height=600"
       );
@@ -31,13 +31,12 @@ const Navbar = () => {
       setToggleLogin(true);
 
       window.addEventListener("message", (event) => {
-        if (event.origin !== process.env.domain) return;
+        if (event.origin !== import.meta.env.VITE_DOMAIN) return;
         const { token, ok } = event.data;
         window.location.reload();
         if (ok) {
           dispatch({ type: "LOGIN", payload: token });
           localStorage.setItem("jwtToken", token);
-          console.log(token);
         }
       });
     } catch (error) {

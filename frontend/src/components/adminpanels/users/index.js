@@ -30,7 +30,7 @@ const Admin = () => {
   }, [token]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch(import.meta.env.VITE_LOCALHOST+"users")
       .then((response) => response.json())
       .then((data) => {
         const admin = data.filter((item) => item.usertyp === "admin");
