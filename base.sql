@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS bethistory (
 CREATE TABLE IF NOT EXISTS rolls (
   id int(11) NOT NULL,
   roll int(11) NOT NULL,
-  colour VARCHAR(10) NOT NULL,
+  colour VARCHAR(10) NOT NULL
 );
 
 
